@@ -113,8 +113,8 @@ def load_data(langs):
 
 def process_data(data, save_mfcc, num_spectrograms):
     all_mfcc_stats = { lang: [] for lang in data.keys() }
-
     for lang in data.keys():
+        temp_num_spectrograms = num_spectrograms
         logging.info(f"Processing {lang} language")
         num_files = len(data[lang])
         current_file = 0
@@ -129,9 +129,9 @@ def process_data(data, save_mfcc, num_spectrograms):
                 if save_mfcc:
                     save_audio_mfcc(mfccs, lang, file)
 
-                if num_spectrograms > 0 and np.random.rand() < 0.1:
+                if temp_num_spectrograms > 0 and np.random.rand() < 0.1:
                     make_save_spectrogram(mfccs, lang, file)
-                    num_spectrograms -= 1
+                    temp_num_spectrograms -= 1
 
                 current_file += 1
                 if current_file % 1000 == 0:
