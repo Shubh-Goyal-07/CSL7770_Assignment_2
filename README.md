@@ -27,7 +27,7 @@ cd CSL7770_Assignment_2
 
 Navigate to the `Q1` directory to run the code for Question 1.
 
-1. **Navigate to the Q2 directory**
+1. **Navigate to the Q1 directory**
    ```bash
    cd Q1
    ```
