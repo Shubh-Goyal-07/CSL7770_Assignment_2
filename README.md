@@ -25,13 +25,13 @@ cd CSL7770_Assignment_2
 
 ## Question 1
 
-Navigate to the `Q1` directory to run the code for Question 2.
+Navigate to the `Q1` directory to run the code for Question 1.
 
 1. **Navigate to the Q2 directory**
    ```bash
    cd Q1
    ```
-    This directory contains all the code files required to run Question 2.
+    This directory contains all the code files required to run Question 1.
 
 2. **Prepare the environment**
    ```bash
